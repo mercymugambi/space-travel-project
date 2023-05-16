@@ -5,7 +5,7 @@ import Rockets from './components/rockets';
 function App() {
   return (
     <BrowserRouter>
-      <Routes path="./">
+      <Routes path="./" element={<Navigation />}>
         <Route index path="Rockets" element={<Rockets />} />
         <Route path="Missions" element={<Missions />} />
         <Route path="*" element={<div>Error! Page not found</div>} />
