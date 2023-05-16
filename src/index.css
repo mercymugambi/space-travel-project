@@ -44,6 +44,10 @@ header {
   margin-right: 20px;
 }
 
+.navItem.active {
+  text-decoration: underline;
+}
+
 .bar {
   border: 2px solid grey;
 }
