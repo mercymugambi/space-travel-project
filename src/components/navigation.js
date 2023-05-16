@@ -1,4 +1,4 @@
-import { Outlet, Link, NavLink } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import logo from '../planet.png';
 
 const Navigation = () => (
@@ -14,7 +14,7 @@ const Navigation = () => (
             <NavLink className="navItem rocket" to="Rockets">Rockets</NavLink>
           </li>
           <li>
-            <Link className="navItem" to="Missions">Missions</Link>
+            <NavLink className="navItem" to="Missions">Missions</NavLink>
           </li>
           <div className="bar" />
           <li>
