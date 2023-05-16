@@ -11,12 +11,15 @@ const Navigation = () => (
       <nav>
         <ul className="navList">
           <li>
-            <Link className="navItem" to="Rockets">Rockets</Link>
+            <Link className="navItem rocket" to="Rockets">Rockets</Link>
           </li>
           <li className="navItem">
             <Link className="navItem" to="Missions">Missions</Link>
           </li>
           <div className="bar" />
+          <li className="navItem">
+            <Link className="navItem" to="Profile">My Profile</Link>
+          </li>
         </ul>
       </nav>
     </header>
