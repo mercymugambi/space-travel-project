@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import logo from '../planet.png';
 
 const Navigation = () => (
@@ -12,12 +11,15 @@ const Navigation = () => (
       <nav>
         <ul className="navList">
           <li>
-            <Link className="navItem" to="Rockets">Rockets</Link>
+            <NavLink className="navItem rocket" to="Rockets">Rockets</NavLink>
           </li>
-          <li className="navItem">
-            <Link className="navItem" to="Missions">Missions</Link>
+          <li>
+            <NavLink className="navItem" to="Missions">Missions</NavLink>
           </li>
           <div className="bar" />
+          <li>
+            <NavLink className="navItem" to="Profile">My Profile</NavLink>
+          </li>
         </ul>
       </nav>
     </header>

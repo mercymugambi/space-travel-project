@@ -9,34 +9,45 @@ li {
 
 header {
   background-color: #fff;
-  padding: 2% 10%;
+  padding: 2% 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px gray solid;
+  margin: 0 3%;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .logoImg {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
 }
 
 .navList {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  margin-right: 50px;
 }
 
 .navItem {
   text-decoration: none;
-  color: #2596be;
+  color: #1f55eb;
   font-size: 20px;
 }
 
+.navItem.rocket {
+  margin-right: 20px;
+}
+
+.navItem.active {
+  text-decoration: underline;
+}
+
 .bar {
-  border: 1px solid grey;
+  border: 2px solid grey;
 }
