@@ -1,8 +1,14 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <BrowserRouter>
+      <Routes path="./">
+        <Route index path="Rockets" element={<Rockets />} />
+        <Route path="Missions" element={<Missions />} />
+        <Route path="*" element={<div>Error! Page not found</div>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
