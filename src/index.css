@@ -10,6 +10,7 @@ background-color: #fff;
 padding: 2% 10%;
 display: flex;
 align-items: center;
+justify-content: space-between;
 }
 
 .logo {
@@ -23,3 +24,17 @@ align-items: center;
   width: 50px;
 }
 
+.navList {
+  display: flex;
+  gap: 10px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #2596be;
+  font-size: 20px;
+}
+
+.bar {
+  border: 1px solid grey;
+}
