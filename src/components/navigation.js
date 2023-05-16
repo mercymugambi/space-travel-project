@@ -1,11 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Outlet, Link } from 'react-router-dom';
+import logo from '../planet.png';
 
 const Navigation = () => (
   <>
     <header>
       <div className="logo">
-        <img src="" alt="Space travel hub logo" />
+        <img src={logo} className="logoImg" alt="Space travel hub logo" />
       </div>
       <nav>
         <ul className="navList">
