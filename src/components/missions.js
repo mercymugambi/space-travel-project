@@ -18,7 +18,7 @@ const Missions = () => {
             <th>Name</th>
             <th>Description</th>
             <th>Status</th>
-            <th>Action</th>
+            <th> </th>
           </tr>
         </thead>
         <tbody>
