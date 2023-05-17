@@ -4,7 +4,7 @@ export const getMissions = createAsyncThunk('missions/getMissions', async () => 
 
 const MissionsSlice = createSlice({
   name: 'missions',
-  initialstate: {
+  initialState: {
     missions: [],
     loading: false,
   },
