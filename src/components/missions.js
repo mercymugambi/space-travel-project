@@ -14,7 +14,7 @@ const Missions = () => {
     <div>
       <table className="table-container">
         <thead>
-          <tr>
+          <tr className="table-head">
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>

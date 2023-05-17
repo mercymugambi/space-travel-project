@@ -70,10 +70,10 @@ header {
   text-align: left;
 }
 
-.table-container tr:nth-child(even) {
+.table-container tr:nth-child(odd) {
   background-color: #f8f8f8;
 }
 
-.table-container tr:nth-child(odd) {
+.table-container tr:nth-child(even) {
   background-color: #ffffff;
 }
