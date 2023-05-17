@@ -12,7 +12,7 @@ const Missions = () => {
   return (
     <div>
       {missions.map((item) => (
-        <h2 key={item.id}>
+        <h2 key={item.mission_id}>
           {item.description}
         </h2>
       ))}
