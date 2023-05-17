@@ -16,6 +16,10 @@ const MissionsSlice = createSlice({
       state.loading = false;
       state.missions = action.payload;
     },
+    [getMissions.rejected]: (state, action) => {
+      state.loading = false;
+      state.missions = action.payload;
+    },
   },
 });
 
