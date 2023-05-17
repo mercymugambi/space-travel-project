@@ -1,9 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { configureStore } from '@reduxjs/toolkit';
+import MissionsReducer from './missions/MissionsSlice';
 
 const store = configureStore({
   reducer: {
-
+    mission: MissionsReducer,
   },
 });
 
