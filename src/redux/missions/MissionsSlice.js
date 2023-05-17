@@ -12,6 +12,10 @@ const MissionsSlice = createSlice({
     [getMissions.pending]: (state) => {
       state.loading = true;
     },
+    [getMissions.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.missions = action.payload;
+    },
   },
 });
 
