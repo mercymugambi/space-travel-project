@@ -8,11 +8,10 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route index path="Rockets" element={<Rockets />} />
+        <Route index path="/" element={<Rockets />} />
         <Route path="Missions" element={<Missions />} />
       </Routes>
     </>
-
   );
 }
 
