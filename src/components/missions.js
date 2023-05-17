@@ -5,17 +5,37 @@ import { getMissions } from '../redux/missions/MissionsSlice';
 const Missions = () => {
   const { missions } = useSelector((state) => state.mission);
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
 
   return (
     <div>
-      {missions.map((item) => (
-        <h2 key={item.mission_id}>
-          {item.description}
-        </h2>
-      ))}
+      <table className="table-container">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <tr key={mission.id}>
+              <td>{mission.mission_name}</td>
+              <td>{mission.description}</td>
+              <td>Not a Member</td>
+              <td>
+                <button type="button">
+                  Join Mission
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
