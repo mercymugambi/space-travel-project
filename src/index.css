@@ -78,6 +78,41 @@ header {
   background-color: #fff;
 }
 
+.active-member {
+  background-color: #4cc0e7;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.not-member {
+  background-color: grey;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.join-mission {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.leave-mission {
+  background-color: transparent;
+  color: rgb(238, 71, 71);
+  border: 1px solid rgb(233, 104, 104);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.table-status-action {
+  width: 10.5%;
+  margin: auto;
+}
+
 .profileContainer {
   padding: 1% 4%;
   display: flex;
