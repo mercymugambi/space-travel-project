@@ -99,3 +99,7 @@ header {
   color: rgb(238, 71, 71);
   border: 1px solid rgb(233, 104, 104);
 }
+
+.table-status-action {
+  width: 10%;
+}

@@ -36,7 +36,7 @@ const Missions = () => {
             <tr key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>
+              <td className="table-status-action">
                 {' '}
                 <span
                   className={mission.reserved ? 'active-member' : 'not-member'}
@@ -44,7 +44,7 @@ const Missions = () => {
                   {mission.reserved ? 'Active Member' : 'Not a Member'}
                 </span>
               </td>
-              <td>
+              <td className="table-status-action">
                 <button
                   className={mission.reserved ? 'leave-mission' : 'join-mission'}
                   type="button"
