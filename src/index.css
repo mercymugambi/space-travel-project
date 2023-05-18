@@ -77,3 +77,14 @@ header {
 .table-container tr:nth-child(even) {
   background-color: #fff;
 }
+
+.active-member {
+  
+  color: green;
+}
+
+.not-member {
+  border: 3px dotted yellow;
+  
+  color: red;
+}
