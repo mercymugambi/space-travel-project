@@ -96,6 +96,6 @@ header {
 
 .leave-mission {
   background-color: transparent;
-  color: red;
-  border: 1px solid red;
+  color: rgb(238, 71, 71);
+  border: 1px solid rgb(233, 104, 104);
 }
