@@ -7,8 +7,10 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (!missions.length) {
+      dispatch(getMissions());
+    }
+  }, [dispatch, missions]);
 
   const handleJoinMission = (missionId) => {
     const mission = missions.find((mission) => mission.mission_id === missionId);
