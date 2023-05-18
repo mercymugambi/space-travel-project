@@ -142,7 +142,7 @@ header {
   border-radius: 4px;
 }
 
-.rockets {
+.rockets, .missions {
   border-bottom: 1px solid gray;
   height: 70px;
   padding: 4% 4% 0 4%;
