@@ -1,14 +1,24 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../redux/missions/MissionsSlice';
+import { getMissions, joinMission } from '../redux/missions/MissionsSlice';
 
 const Missions = () => {
-  const { missions } = useSelector((state) => state.mission);
+  const missions = useSelector((state) => state.mission.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getMissions());
   }, [dispatch]);
+
+  const handleJoinMission = (missionId) => {
+    const mission = missions.find((mission) => mission.mission_id === missionId);
+
+    if (mission.reserved) {
+      dispatch(joinMission(missionId));
+    } else {
+      dispatch(joinMission(missionId));
+    }
+  };
 
   return (
     <div>
@@ -26,10 +36,14 @@ const Missions = () => {
             <tr key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>NOT A MEMBER</td>
+              <td>{mission.reserved ? 'Joined Mission' : 'Not a Member'}</td>
               <td>
-                <button type="button">
-                  Join Mission
+                <button
+                  type="button"
+                  onClick={() => handleJoinMission(mission.mission_id)}
+                  disabled={mission.loading}
+                >
+                  {mission.reserved ? 'Leave Mission' : 'Join Mission'}
                 </button>
               </td>
             </tr>
