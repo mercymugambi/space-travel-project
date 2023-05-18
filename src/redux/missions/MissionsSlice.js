@@ -30,6 +30,9 @@ const MissionsSlice = createSlice({
         const missionId = action.payload;
         // eslint-disable-next-line max-len
         state.missions = state.missions.map((mission) => (mission.mission_id !== missionId ? mission : { ...mission, reserved: true }));
+      })
+      .addCase(joinMission.rejected, (state) => {
+        state.loading = false;
       });
   },
 });
