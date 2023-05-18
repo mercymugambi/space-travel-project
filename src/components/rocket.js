@@ -14,12 +14,16 @@ const Rocket = ({
       </div>
       <div className={styles.content}>
         <h2 className={styles.name}>{rocketName}</h2>
-        <p className={styles.description}>{description}</p>
-        {reservation ? (
+        <p className={styles.description}>
+          {reservation && <small className={styles.badge}>Reserved</small>}
+          {description}
+        </p>
+        {reservation && (
           <button type="button" className={styles.btnReserved} onClick={() => dispatch(cancelReserve(id))}>
             Cancel Reservation
           </button>
-        ) : (
+        )}
+        {!reservation && (
           <button
             type="button"
             className={styles.btn}
