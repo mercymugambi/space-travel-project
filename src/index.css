@@ -112,3 +112,37 @@ header {
   width: 10.5%;
   margin: auto;
 }
+
+.profileContainer {
+  padding: 1% 4%;
+  display: flex;
+  gap: 30px;
+}
+
+.missionsProfile {
+  width: 50%;
+}
+
+.missionsContainer {
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.mission {
+  border-bottom: 1px solid gray;
+  height: 70px;
+}
+
+.rocketsProfile {
+  width: 50%;
+}
+
+.rocketsContainer {
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.rocket {
+  border-bottom: 1px solid gray;
+  height: 70px;
+}

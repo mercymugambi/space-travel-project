@@ -53,3 +53,13 @@
   border: 1px solid black;
   border-radius: 4px;
 }
+
+.badge {
+  border: 1px solid rgb(22, 195, 22);
+  border-radius: 6px;
+  background-color: rgb(22, 195, 22);
+  color: #fff;
+  padding: 1px 5px;
+  text-align: center;
+  margin-right: 10px;
+}
