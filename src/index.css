@@ -79,11 +79,11 @@ header {
 }
 
 .active-member {
-  
-  color: green;
+  background-color: #4cc0e7;
+  color: #fff;
 }
 
 .not-member {
-  background-color: rgb(59, 59, 59);
-  color: white;
+  background-color: grey;
+  color: #fff;
 }
