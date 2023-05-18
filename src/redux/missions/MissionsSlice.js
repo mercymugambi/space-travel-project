@@ -24,6 +24,12 @@ const MissionsSlice = createSlice({
       })
       .addCase(joinMission.pending, (state) => {
         state.loading = true;
+      })
+      .addCase(joinMission.fulfilled, (state, action) => {
+        state.loading = false;
+        const missionId = action.payload;
+        // eslint-disable-next-line max-len
+        state.missions = state.missions.map((mission) => (mission.mission_id !== missionId ? mission : { ...mission, reserved: true }));
       });
   },
 });
