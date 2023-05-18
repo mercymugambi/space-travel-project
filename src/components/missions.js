@@ -36,9 +36,17 @@ const Missions = () => {
             <tr key={mission.mission_id}>
               <td>{mission.mission_name}</td>
               <td>{mission.description}</td>
-              <td>{mission.reserved ? 'Joined Mission' : 'Not a Member'}</td>
-              <td>
+              <td className="table-status-action">
+                {' '}
+                <span
+                  className={mission.reserved ? 'active-member' : 'not-member'}
+                >
+                  {mission.reserved ? 'Active Member' : 'Not a Member'}
+                </span>
+              </td>
+              <td className="table-status-action">
                 <button
+                  className={mission.reserved ? 'leave-mission' : 'join-mission'}
                   type="button"
                   onClick={() => handleJoinMission(mission.mission_id)}
                   disabled={mission.loading}
