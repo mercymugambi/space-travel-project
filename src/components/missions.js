@@ -46,6 +46,7 @@ const Missions = () => {
               </td>
               <td>
                 <button
+                  className={mission.reserved ? 'leave-mission' : 'join-mission'}
                   type="button"
                   onClick={() => handleJoinMission(mission.mission_id)}
                   disabled={mission.loading}
