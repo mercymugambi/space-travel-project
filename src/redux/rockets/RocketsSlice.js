@@ -59,5 +59,5 @@ const RocketsSlice = createSlice({
   },
 });
 
-export const { reserveRocket } = RocketsSlice.actions;
+export const { reserveRocket, cancelReserve } = RocketsSlice.actions;
 export default RocketsSlice.reducer;
