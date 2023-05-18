@@ -42,3 +42,14 @@
   border: none;
   border-radius: 4px;
 }
+
+.btnReserved {
+  background-color: inherit;
+  color: gray;
+  width: 170px;
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+}
