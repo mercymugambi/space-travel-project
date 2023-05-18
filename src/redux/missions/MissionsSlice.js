@@ -21,6 +21,9 @@ const MissionsSlice = createSlice({
       .addCase(getMissions.rejected, (state, action) => {
         state.loading = false;
         state.missions = action.payload;
+      })
+      .addCase(joinMission.pending, (state) => {
+        state.loading = true;
       });
   },
 });
