@@ -142,7 +142,10 @@ header {
   border-radius: 4px;
 }
 
-.rocket {
+.rockets {
   border-bottom: 1px solid gray;
   height: 70px;
+  padding: 4% 4% 0 4%;
+  font-size: 1.1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
