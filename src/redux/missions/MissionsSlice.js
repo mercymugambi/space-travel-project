@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getMissions = createAsyncThunk('missions/getMissions', async () => fetch('https://api.spacexdata.com/v3/missions').then((res) => res.json()));
+export const joinMission = createAsyncThunk('missions/joinMission', async (missionId) => missionId);
 
 const MissionsSlice = createSlice({
   name: 'missions',
