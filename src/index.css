@@ -84,7 +84,6 @@ header {
 }
 
 .not-member {
-  border: 3px dotted yellow;
-  
-  color: red;
+  background-color: rgb(59, 59, 59);
+  color: white;
 }
