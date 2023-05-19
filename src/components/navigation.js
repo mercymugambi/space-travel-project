@@ -3,7 +3,7 @@ import logo from '../planet.png';
 
 const Navigation = () => (
   <>
-    <header>
+    <header data-testid="header">
       <div className="logo">
         <img src={logo} className="logoImg" alt="Space travel hub logo" />
         <h1>Space Traveler&apos;s Hub</h1>
