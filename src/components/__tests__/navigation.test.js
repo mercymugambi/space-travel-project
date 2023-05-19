@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
+import renderer from 'react-test-renderer';
 import Navigation from '../navigation';
 import '@testing-library/jest-dom/extend-expect';
 
@@ -48,5 +49,14 @@ describe('Application interactions', () => {
     );
     const profileLinkElement = screen.getByRole('link', { name: /my profile/i });
     expect(profileLinkElement).toBeInTheDocument();
+  });
+  it('should match the snapshot', () => {
+    const component = renderer.create(
+      <MemoryRouter>
+        <Navigation />
+      </MemoryRouter>,
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

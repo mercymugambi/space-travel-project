@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application interactions should match the snapshot 1`] = `
+<header
+  data-testid="header"
+>
+  <div
+    className="logo"
+  >
+    <img
+      alt="Space travel hub logo"
+      className="logoImg"
+      src="planet.png"
+    />
+    <h1>
+      Space Traveler's Hub
+    </h1>
+  </div>
+  <nav>
+    <ul
+      className="navList"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="navItem rocket active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className="navItem"
+          href="/Missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <div
+        className="bar"
+      />
+      <li>
+        <a
+          className="navItem"
+          href="/Profile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
