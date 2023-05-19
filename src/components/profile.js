@@ -12,7 +12,7 @@ const Profile = () => {
         <div className="missionsContainer">
           {
             reservedMissions.map((reservedMission) => (
-              <div key={reservedMission.id} className="missions">{reservedMission.mission_name}</div>
+              <div key={reservedMission.mission_id} className="missions">{reservedMission.mission_name}</div>
             ))
           }
         </div>
