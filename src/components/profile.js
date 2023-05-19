@@ -6,13 +6,13 @@ const Profile = () => {
   const missions = useSelector((state) => state.mission.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved);
   return (
-    <div className="profileContainer">
+    <div className="profileContainer" data-testid="profile-container">
       <div className="missionsProfile">
         <h2>My Missions</h2>
         <div className="missionsContainer">
           {
             reservedMissions.map((reservedMission) => (
-              <div key={reservedMission.mission_id} className="missions">{reservedMission.mission_name}</div>
+              <div key={reservedMission.mission_id} className="missions" data-testid="mission">{reservedMission.mission_name}</div>
             ))
           }
         </div>
@@ -22,7 +22,7 @@ const Profile = () => {
         <div className="rocketsContainer">
           {
             reservedRockets.map((reservedRocket) => (
-              <div key={reservedRocket.id} className="rockets">{reservedRocket.rocketName}</div>
+              <div key={reservedRocket.id} className="rockets" data-testid="rocket">{reservedRocket.rocketName}</div>
             ))
           }
         </div>
