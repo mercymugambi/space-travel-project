@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Bookstore CMS <a name="about-project"></a>
+# 📖 SPACE TRAVEL Hub <a name="about-project"></a>
 
 This is the Space Travel Hub website created with React using CRA CLI. It describes a number of features related to the rockets, and missions associated with providing commercial and scientific space travel services.
 
@@ -51,7 +51,7 @@ This is the Space Travel Hub website created with React using CRA CLI. It descri
 
 ## 🚀 Live Demo <a name="live-demo">
   
-  - [Not Available yet](#)
+  - [Live version](https://space-travel-hub.onrender.com)
   
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -108,7 +108,13 @@ To run the project, execute the following command:
 
 <!-- AUTHORS -->
 
-##  <a name="authors">👥 Authors</a>
+## 👥 Authors <a name="authors"></a>
+
+👤 **Mercy Mugambi**
+
+- GitHub: [@mercymugambi](https://github.com/mercymugambi)
+- Twitter: [@mercymugambi](https://twitter.com/MercyMugambi15)
+- LinkedIn: [@mercymugambi](https://www.linkedin.com/in/mercymugambi/)
 
 👤 **Yan Min Thwin**
 

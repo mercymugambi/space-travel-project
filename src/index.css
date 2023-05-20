@@ -1,0 +1,152 @@
+html,
+body,
+li {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background-color: #fff;
+  padding: 1.5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px gray solid;
+  margin: 0 3%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoImg {
+  height: 60px;
+  width: 60px;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #1f55eb;
+  font-size: 20px;
+}
+
+.navItem.rocket {
+  margin-right: 20px;
+}
+
+.navItem.active {
+  text-decoration: underline;
+}
+
+.bar {
+  border: 2px solid grey;
+}
+
+.table-container {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.table-container td,
+.table-container th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.active-member {
+  background-color: #4cc0e7;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.not-member {
+  background-color: grey;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.join-mission {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.leave-mission {
+  background-color: transparent;
+  color: rgb(238, 71, 71);
+  border: 1px solid rgb(233, 104, 104);
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.table-status-action {
+  width: 10.5%;
+  margin: auto;
+}
+
+.profileContainer {
+  padding: 1% 4%;
+  display: flex;
+  gap: 30px;
+}
+
+.missionsProfile {
+  width: 50%;
+}
+
+.missionsContainer {
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.mission {
+  border-bottom: 1px solid gray;
+  height: 70px;
+}
+
+.rocketsProfile {
+  width: 50%;
+}
+
+.rocketsContainer {
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.rockets,
+.missions {
+  border-bottom: 1px solid gray;
+  height: 70px;
+  padding: 4% 4% 0 4%;
+  font-size: 1.1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
