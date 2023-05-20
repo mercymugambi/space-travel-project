@@ -51,7 +51,7 @@ This is the Space Travel Hub website created with React using CRA CLI. It descri
 
 ## 🚀 Live Demo <a name="live-demo">
   
-  - [Not Available yet](#)
+  - [Live version](https://space-travel-hub.onrender.com)
   
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
